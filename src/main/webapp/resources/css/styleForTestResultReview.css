@@ -1,0 +1,11 @@
+p.correctAnswer{
+    background-color: lightgreen;
+}
+
+p.uncorrectAnswer{
+    background-color: #b3746c;
+}
+i.colorBlue{
+    color: #5d6fff;
+}
+

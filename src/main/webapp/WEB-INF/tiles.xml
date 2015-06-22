@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+<tiles-definitions>
+    <!--<definition name="baseLayout" template="/WEB-INF/jsp/layout/layout.jsp">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+    </definition>-->
+      <definition name="baseLayout" template="/WEB-INF/jsp/layout/bootstrapLayout.jsp">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="header" value="/WEB-INF/jsp/layout/bootstrapHeader.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/layout/bootstrapFooter.jsp" />
+    </definition>
+    <definition name="access/login" template="/WEB-INF/jsp/access/login.jsp">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="header" value="/" />
+        <put-attribute name="body" value="/WEB-INF/jsp/access/login.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    <definition name="access/denied" template="/WEB-INF/jsp/access/denied.jsp">
+        <put-attribute name="title" value="	" />
+        <put-attribute name="header" value="/" />
+        <put-attribute name="body" value="/WEB-INF/jsp/access/denied.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    <definition name="availableTest" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/availableTest.jsp" />
+    </definition>
+    <definition name="updateAvailableTest" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/updateAvailableTest.jsp" />
+    </definition>
+    <definition name="testing" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/layoutForTesting.jsp" />
+    </definition>
+    <definition name="questionForTest" template="/WEB-INF/jsp/layoutForTesting.jsp">
+    </definition>
+    <definition name="userTestResult" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/userTestResult.jsp" />
+    </definition>
+	<definition name="test" extends="baseLayout">
+		<put-attribute name="title" value="Index >iTest" />
+		<put-attribute name="body" value="" />
+	</definition>
+     <!--Group-->
+    <definition name="tableGroup" extends="baseLayout">
+        <put-attribute name="title" value="Create group - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/tableGroup.jsp" />
+    </definition>
+    <definition name="creatingGroup" extends="baseLayout">
+        <put-attribute name="title" value="Create group - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/creatingGroup.jsp" />
+    </definition>
+    <!--end Group-->
+    <!--category-->
+    <!--<definition name="creatingCategory" extends="baseLayout">-->
+        <!--<put-attribute name="title" value="Create user - iTest" />-->
+        <!--<put-attribute name="body" value="/WEB-INF/jsp/creatingCategory.jsp" />-->
+    <!--</definition>-->
+    <definition name="tableCategory" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/tableCategory.jsp" />
+    </definition>
+    <!--end category-->
+    <definition name="profile" extends="baseLayout">
+        <put-attribute name="title" value="Profile - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/profile.jsp" />
+    </definition>
+    <!--user -->
+    <definition name="creatingUser" extends="baseLayout">
+        <put-attribute name="title" value="Creating user - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/creatingUser.jsp" />
+    </definition>
+    <definition name="tableUser" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/tableUser.jsp" />
+    </definition>
+     <!--end user-->
+    <!--Rating-->
+    <definition name="ratingUsers" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ratingUsers.jsp" />
+    </definition>
+    <definition name="ratingCategory" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ratingCategory.jsp" />
+    </definition>
+    <!--page fro review choosen answer-->
+    <definition name="reviewTestResult" extends="baseLayout">
+        <put-attribute name="title" value="Create user - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/reviewTestResult.jsp" />
+    </definition>
+    <!--category-->
+    <definition name="creatingCategory" extends="baseLayout">
+        <put-attribute name="title" value="Create user - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/creatingCategory.jsp" />
+    </definition>
+    <!--end category-->
+    <definition name="results" extends="baseLayout">
+        <put-attribute name="title" value="Results - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/results.jsp" />
+    </definition>
+    <definition name="testsInCategory" extends="baseLayout">
+        <put-attribute name="title" value="Categories - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/testsInCategory.jsp" />
+    </definition>
+    <definition name="testAdd" extends="baseLayout">
+        <put-attribute name="title" value="Add test - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/testAdd.jsp" />
+    </definition>
+    <definition name="questions" extends="baseLayout">
+        <put-attribute name="title" value="Questions - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/questions.jsp" />
+    </definition>
+    <definition name="answers" extends="baseLayout">
+        <put-attribute name="title" value="Answers - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/answers.jsp" />
+    </definition>
+    <definition name="addQuestion" extends="baseLayout">
+        <put-attribute name="title" value="Add question - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/addQuestion.jsp" />
+    </definition>
+    <definition name="userStats" extends="baseLayout">
+        <put-attribute name="title" value="Statistics - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/userStats.jsp" />
+    </definition>
+    <definition name="testStats" extends="baseLayout">
+        <put-attribute name="title" value="Test statistics - iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/testStats.jsp" />
+    </definition>
+    <definition name="page404" extends="baseLayout">
+        <put-attribute name="title" value="Not found" />
+        <put-attribute name="body" value="/WEB-INF/jsp/page404.jsp" />
+    </definition>
+    <definition name="team" extends="baseLayout">
+        <put-attribute name="title" value="Team - iTester" />
+        <put-attribute name="body" value="/WEB-INF/jsp/team.jsp" />
+    </definition>
+		<!--error_handler_exception-->
+    <definition name="generic_error" extends="baseLayout">
+        <put-attribute name="title" value="iTest" />
+        <put-attribute name="body" value="/WEB-INF/jsp/generic_error.jsp" />
+    </definition>
+	<!--error_handler_exception-->
+</tiles-definitions>
